@@ -7,7 +7,6 @@ const server = express();
 const port = process.env.PORT || 4000;
 
 server.use(express.json());
-
 server.use("/resources", resourceRouter);
 server.use("/projects", projectRouter);
 server.use("/tasks", taskRouter);
